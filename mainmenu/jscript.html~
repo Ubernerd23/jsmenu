@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+ <title>Jscript ex</title>
+<script type="text/javascript" src="ex.js"></script>
+<script type="text/javascript" src="map.js"></script>
+
+<style>
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+
+</style>
+
+
+
+
+<style>
+
+    .bg {
+  position: relative;
+  top: 100;
+  left: 0;
+}
+
+</style>
+
+
+
+<style>
+
+    .start {
+  position: relative;
+ top: -730px;
+  left: 530px;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="parent">
+  
+   
+   <img id="bg"class="bg"src="bkgrd.jpg" alt="Girl in a jacket"onclick="" width="1900" height="1000"> 
+    <img id="start"class="start"src="start.png" alt="Girl in a jacket"onclick="var img = document.getElementById('start');img.parentNode.removeChild(img);var bgr = document.getElementById('bg');bgr.parentNode.removeChild(bgr);var img = document.createElement('img');img.style.marginLeft= '100px';img.style.marginTop= '-60px';img.src = 'bkgrd.jpg';img.width='1000';img.height='1000';document.body.appendChild(img);" width="100" height="100"> 
+
+</div>
+</body>
+</html>
